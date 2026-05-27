@@ -1,0 +1,1179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Act Smart - Wattwise</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="act-smart.css?v=20260527">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg main-nav" aria-label="Main navigation">
+        <a class="navbar-brand brand" href="index.html">
+          <img src="images/wattwise logo.png" alt="Wattwise logo">
+          <span>Watt<span>wise</span></span>
+        </a>
+
+        <button class="navbar-toggler nav-toggle-label" type="button" data-bs-toggle="collapse" data-bs-target="#actNavbar" aria-controls="actNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+
+        <div class="collapse navbar-collapse nav-content" id="actNavbar">
+          <ul class="navbar-nav nav-links">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+            <li class="nav-item dropdown nav-dropdown">
+              <button class="nav-link dropdown-toggle nav-trigger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Smart Solutions
+              </button>
+              <ul class="dropdown-menu smart-menu">
+                <li>
+                  <a class="dropdown-item" href="crossroads.html">
+                    <span><i class="bi bi-signpost-split-fill" aria-hidden="true"></i></span>
+                    Crossroads
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="act-smart.html">
+                    <span><i class="bi bi-gear-wide-connected" aria-hidden="true"></i></span>
+                    Act Smart
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="energy-impact.html">
+                    <span><i class="bi bi-lightning-charge" aria-hidden="true"></i></span>
+                    Energy Impact
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <label class="btn sign-up" for="authSignupView" data-bs-toggle="modal" data-bs-target="#authModal" role="button" tabindex="0">Sign Up</label>
+            <label class="btn login" for="authLoginView" data-bs-toggle="modal" data-bs-target="#authModal" role="button" tabindex="0">Login</label>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <input class="action-tab-radio" type="radio" name="actionTab" id="allActionsRadio" checked>
+      <input class="action-tab-radio" type="radio" name="actionTab" id="homeActionsRadio">
+      <input class="action-tab-radio" type="radio" name="actionTab" id="schoolActionsRadio">
+      <input class="action-tab-radio" type="radio" name="actionTab" id="dailyActionsRadio">
+      <input class="action-tab-radio" type="radio" name="actionTab" id="transportActionsRadio">
+      <input class="action-tab-radio" type="radio" name="actionTab" id="smartTechActionsRadio">
+      <input class="action-tab-radio" type="radio" name="actionTab" id="renewableActionsRadio">
+
+      <section class="act-hero" data-aos="fade-up">
+        <div class="page-container">
+          <h1>Practical Actions &amp; Impact</h1>
+          <p>
+            A practical solution library for Yangon: actions people can start at home, in school, and during
+            daily travel without pretending every solution fits every budget.
+          </p>
+
+          <div class="awareness-video-section py-5">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-5">
+                <span class="action-label smart-label">Awareness Video</span>
+                <h2>See The Actions In Real Life</h2>
+                <p>
+                  A Wattwise awareness video turn simple
+                  energy habits into everyday action.
+                </p>
+              </div>
+              <div class="col-lg-7">
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+                  <iframe src="https://www.youtube.com/embed/KzFGPElMhdQ" title="Wattwise awareness video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="nav nav-pills action-tabs" id="actionTabs" role="tablist" aria-label="Action categories">
+            <li class="nav-item" role="presentation">
+              <label class="nav-link" id="all-actions-tab" for="allActionsRadio" role="tab" aria-controls="all-actions">All Tips</label>
+            </li>
+            <li class="nav-item" role="presentation">
+              <label class="nav-link" id="home-actions-tab" for="homeActionsRadio" role="tab" aria-controls="home-actions">Home</label>
+            </li>
+            <li class="nav-item" role="presentation">
+              <label class="nav-link" id="school-actions-tab" for="schoolActionsRadio" role="tab" aria-controls="school-actions">School</label>
+            </li>
+            <li class="nav-item" role="presentation">
+              <label class="nav-link" id="daily-actions-tab" for="dailyActionsRadio" role="tab" aria-controls="daily-actions">Daily Life</label>
+            </li>
+            <li class="nav-item" role="presentation">
+              <label class="nav-link" id="transport-actions-tab" for="transportActionsRadio" role="tab" aria-controls="transport-actions">Transportation</label>
+            </li>
+            <li class="nav-item" role="presentation">
+              <label class="nav-link" id="smart-tech-actions-tab" for="smartTechActionsRadio" role="tab" aria-controls="smart-tech-actions">Smart Tech</label>
+            </li>
+            <li class="nav-item" role="presentation">
+              <label class="nav-link" id="renewable-actions-tab" for="renewableActionsRadio" role="tab" aria-controls="renewable-actions">Renewables</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="tips-section" data-aos="fade-up">
+        <div class="page-container">
+          <div class="tab-content action-tab-content" id="actionTabsContent">
+            <div class="tab-pane action-pane" id="all-actions" role="tabpanel" aria-labelledby="all-actions-tab" tabindex="0">
+              <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-lightbulb-fill" aria-hidden="true"></i></div>
+                    <span class="action-label">Home</span>
+                    <h2>Daylight Before Lighting</h2>
+                    <p>Open curtains, move study desks near windows, and turn on only the lights needed for the task.</p>
+                    <ul class="action-list">
+                      <li>Check rooms before sunset.</li>
+                      <li>Use task lamps instead of whole-room lighting.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-fan" aria-hidden="true"></i></div>
+                    <span class="action-label">Home</span>
+                    <h2>Fan-First Cooling</h2>
+                    <p>Use shade, airflow, and fans before stronger cooling. Keep doors closed when cooling one room.</p>
+                    <ul class="action-list">
+                      <li>Clean fan blades monthly.</li>
+                      <li>Cool only occupied rooms.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-plug-fill" aria-hidden="true"></i></div>
+                    <span class="action-label">Home</span>
+                    <h2>Standby Power Basket</h2>
+                    <p>Group chargers, speakers, and small devices on one power strip so they are easy to switch off.</p>
+                    <ul class="action-list">
+                      <li>Unplug after charging.</li>
+                      <li>Turn off TV boxes at night.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-snow" aria-hidden="true"></i></div>
+                    <span class="action-label">Home</span>
+                    <h2>Fridge Door Discipline</h2>
+                    <p>Decide what you need before opening the fridge and keep warm food outside until it cools.</p>
+                    <ul class="action-list">
+                      <li>Do quick door checks.</li>
+                      <li>Leave space behind the fridge.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-droplet-half" aria-hidden="true"></i></div>
+                    <span class="action-label">Home</span>
+                    <h2>Water Pump Schedule</h2>
+                    <p>Set a household pump time and turn it off immediately after tanks are filled.</p>
+                    <ul class="action-list">
+                      <li>Fix leaking taps early.</li>
+                      <li>Avoid repeated short pump runs.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-basket2-fill" aria-hidden="true"></i></div>
+                    <span class="action-label">Home</span>
+                    <h2>Batch Heat Tasks</h2>
+                    <p>Iron clothes in groups and boil only the water needed for tea, noodles, or coffee.</p>
+                    <ul class="action-list">
+                      <li>Do one ironing session.</li>
+                      <li>Use lids while heating.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-clipboard-check-fill" aria-hidden="true"></i></div>
+                    <span class="action-label school-label">School</span>
+                    <h2>End-of-Class Checklist</h2>
+                    <p>Make one student team check fans, lights, projectors, speakers, and extension cords after each class.</p>
+                    <ul class="action-list">
+                      <li>Rotate the team weekly.</li>
+                      <li>Post the checklist near the door.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-sun-fill" aria-hidden="true"></i></div>
+                    <span class="action-label school-label">School</span>
+                    <h2>Daylight Seating Map</h2>
+                    <p>Arrange seats so students can use natural light without blocking walkways or causing glare.</p>
+                    <ul class="action-list">
+                      <li>Keep windows clear.</li>
+                      <li>Use fewer lights in bright periods.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-pc-display" aria-hidden="true"></i></div>
+                    <span class="action-label school-label">School</span>
+                    <h2>Computer Room Shutdown</h2>
+                    <p>Turn off monitors, CPUs, speakers, and stabilizers when the lab is not in use.</p>
+                    <ul class="action-list">
+                      <li>Use a shutdown captain.</li>
+                      <li>Check before lunch and closing time.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-projector-fill" aria-hidden="true"></i></div>
+                    <span class="action-label school-label">School</span>
+                    <h2>Projector Time Plan</h2>
+                    <p>Switch projectors on only when the lesson needs them and turn them off during discussion time.</p>
+                    <ul class="action-list">
+                      <li>Prepare slides before class.</li>
+                      <li>Use board work when possible.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-bar-chart-fill" aria-hidden="true"></i></div>
+                    <span class="action-label school-label">School</span>
+                    <h2>Weekly Energy Audit</h2>
+                    <p>Students record where energy is wasted and suggest one improvement for the next week.</p>
+                    <ul class="action-list">
+                      <li>Track repeated problems.</li>
+                      <li>Share results in assembly.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-megaphone-fill" aria-hidden="true"></i></div>
+                    <span class="action-label school-label">School</span>
+                    <h2>Energy Reminder Posters</h2>
+                    <p>Place short reminders near switches, classroom doors, and computer tables.</p>
+                    <ul class="action-list">
+                      <li>Use student-made posters.</li>
+                      <li>Change messages monthly.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-cup-hot-fill" aria-hidden="true"></i></div>
+                    <span class="action-label">Daily Life</span>
+                    <h2>Cook Once, Reheat Less</h2>
+                    <p>Plan meals so rice, curry, and hot water are prepared in fewer heating sessions.</p>
+                    <ul class="action-list">
+                      <li>Use lids while cooking.</li>
+                      <li>Turn warmers off after meals.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-battery-charging" aria-hidden="true"></i></div>
+                    <span class="action-label">Daily Life</span>
+                    <h2>Charge With A Plan</h2>
+                    <p>Charge phones and power banks together, then unplug chargers instead of leaving them in sockets.</p>
+                    <ul class="action-list">
+                      <li>Use one charging station.</li>
+                      <li>Remove full devices quickly.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-moisture" aria-hidden="true"></i></div>
+                    <span class="action-label">Daily Life</span>
+                    <h2>Sun-Dry When Possible</h2>
+                    <p>Use sunlight and airflow for clothes instead of extra electric drying or repeated fan use.</p>
+                    <ul class="action-list">
+                      <li>Wash full loads.</li>
+                      <li>Spin-dry before hanging.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-phone-fill" aria-hidden="true"></i></div>
+                    <span class="action-label">Daily Life</span>
+                    <h2>Screen Brightness Habit</h2>
+                    <p>Lower phone and laptop brightness indoors and use sleep mode during breaks.</p>
+                    <ul class="action-list">
+                      <li>Set auto-sleep timers.</li>
+                      <li>Close unused apps.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-tools" aria-hidden="true"></i></div>
+                    <span class="action-label">Daily Life</span>
+                    <h2>Repair Before Replacing</h2>
+                    <p>Fix loose plugs, broken switches, and damaged wires early so appliances do not waste power or become unsafe.</p>
+                    <ul class="action-list">
+                      <li>Ask an adult or technician.</li>
+                      <li>Do not use damaged cords.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-cart-check-fill" aria-hidden="true"></i></div>
+                    <span class="action-label">Daily Life</span>
+                    <h2>Buy With Efficiency In Mind</h2>
+                    <p>When buying appliances, compare size, energy label, repair support, and real household need.</p>
+                    <ul class="action-list">
+                      <li>Avoid oversized appliances.</li>
+                      <li>Choose durable products.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-map-fill" aria-hidden="true"></i></div>
+                    <span class="action-label">Transportation</span>
+                    <h2>Plan Trips Before Leaving</h2>
+                    <p>Group nearby errands, avoid unnecessary repeat trips, and choose routes that reduce waiting and idling.</p>
+                    <ul class="action-list">
+                      <li>List stops before leaving.</li>
+                      <li>Avoid repeat trips on the same route.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-people-fill" aria-hidden="true"></i></div>
+                    <span class="action-label">Transportation</span>
+                    <h2>Shared Ride Routine</h2>
+                    <p>Share rides for school or work when it is safe, planned, and practical for everyone.</p>
+                    <ul class="action-list">
+                      <li>Set fixed pickup times.</li>
+                      <li>Avoid half-empty repeat trips.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-person-walking" aria-hidden="true"></i></div>
+                    <span class="action-label">Transportation</span>
+                    <h2>Walk Short Distances</h2>
+                    <p>For nearby shops, tuition, or friends' houses, walk when the route, daylight, and weather are safe.</p>
+                    <ul class="action-list">
+                      <li>Choose shaded routes.</li>
+                      <li>Travel with friends when needed.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-stopwatch-fill" aria-hidden="true"></i></div>
+                    <span class="action-label">Transportation</span>
+                    <h2>Reduce Engine Idling</h2>
+                    <p>When waiting safely for a longer time, turn off the engine instead of burning fuel while parked.</p>
+                    <ul class="action-list">
+                      <li>Plan waiting points.</li>
+                      <li>Avoid blocking traffic.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-bicycle" aria-hidden="true"></i></div>
+                    <span class="action-label">Transportation</span>
+                    <h2>Cycle Where It Fits</h2>
+                    <p>Use bicycles for short, safe routes and keep tires, brakes, and lights in good condition.</p>
+                    <ul class="action-list">
+                      <li>Pick low-traffic streets.</li>
+                      <li>Carry rain protection.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-signpost-split-fill" aria-hidden="true"></i></div>
+                    <span class="action-label">Transportation</span>
+                    <h2>Route Check Habit</h2>
+                    <p>Check traffic and weather before leaving so trips use less time, fuel, and frustration.</p>
+                    <ul class="action-list">
+                      <li>Leave before rush where possible.</li>
+                      <li>Combine pickup and shopping stops.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-plug-fill" aria-hidden="true"></i></div>
+                    <span class="action-label smart-label">Smart Tech</span>
+                    <h2>Smart Plug Control</h2>
+                    <p>Use smart plugs or switched power strips to schedule chargers, routers, and TV devices off when not needed.</p>
+                    <ul class="action-list">
+                      <li>Start with one high-use corner.</li>
+                      <li>Check schedules every week.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-clock-fill" aria-hidden="true"></i></div>
+                    <span class="action-label smart-label">Smart Tech</span>
+                    <h2>Timer Switch Routine</h2>
+                    <p>Use timer switches for lights, fans, signboards, and classroom devices that are often forgotten.</p>
+                    <ul class="action-list">
+                      <li>Set shutdown times clearly.</li>
+                      <li>Override only when needed.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-speedometer2" aria-hidden="true"></i></div>
+                    <span class="action-label smart-label">Smart Tech</span>
+                    <h2>Energy Meter Check</h2>
+                    <p>Use a plug-in meter or regular meter photo log to see which habits change electricity use.</p>
+                    <ul class="action-list">
+                      <li>Measure one appliance at a time.</li>
+                      <li>Compare weekly readings.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-broadcast-pin" aria-hidden="true"></i></div>
+                    <span class="action-label smart-label">Smart Tech</span>
+                    <h2>Motion Sensor Lighting</h2>
+                    <p>Use motion sensors in corridors, stairways, toilets, or storage rooms where lights are often left on.</p>
+                    <ul class="action-list">
+                      <li>Use sensors in low-traffic areas.</li>
+                      <li>Keep manual switches available.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-stars" aria-hidden="true"></i></div>
+                    <span class="action-label smart-label">Smart Tech</span>
+                    <h2>Inverter Appliance Upgrade</h2>
+                    <p>When replacing fans, refrigerators, or air conditioners, compare inverter models and real room size.</p>
+                    <ul class="action-list">
+                      <li>Replace only when needed.</li>
+                      <li>Avoid oversized appliances.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-thermometer-half" aria-hidden="true"></i></div>
+                    <span class="action-label smart-label">Smart Tech</span>
+                    <h2>Smart Temperature Rule</h2>
+                    <p>Set clear temperature rules for cooling rooms and use fans, curtains, and timers together.</p>
+                    <ul class="action-list">
+                      <li>Cool only occupied rooms.</li>
+                      <li>Use timers during study sessions.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-sun-fill" aria-hidden="true"></i></div>
+                    <span class="action-label renewable-label">Renewables</span>
+                    <h2>Solar Study Lamp</h2>
+                    <p>Use solar lamps for study tables, reading corners, and emergency lighting when sunlight is available.</p>
+                    <ul class="action-list">
+                      <li>Charge near sunlight safely.</li>
+                      <li>Keep one lamp for study time.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-battery-charging" aria-hidden="true"></i></div>
+                    <span class="action-label renewable-label">Renewables</span>
+                    <h2>Solar Charging Station</h2>
+                    <p>Create a small solar charging point for phones, study lights, or power banks where it is practical.</p>
+                    <ul class="action-list">
+                      <li>Charge during strong daylight.</li>
+                      <li>Protect batteries from heat.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-lightbulb-fill" aria-hidden="true"></i></div>
+                    <span class="action-label renewable-label">Renewables</span>
+                    <h2>Solar Path Lighting</h2>
+                    <p>Use solar lights for gates, footpaths, school walkways, or outdoor community spaces.</p>
+                    <ul class="action-list">
+                      <li>Place panels where shade is low.</li>
+                      <li>Clean panels regularly.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-house-check-fill" aria-hidden="true"></i></div>
+                    <span class="action-label renewable-label">Renewables</span>
+                    <h2>Rooftop Solar Readiness</h2>
+                    <p>For schools or businesses, check roof strength, sunlight, budget, and maintenance before rooftop solar.</p>
+                    <ul class="action-list">
+                      <li>Ask a qualified installer.</li>
+                      <li>Plan battery safety first.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-wind" aria-hidden="true"></i></div>
+                    <span class="action-label renewable-label">Renewables</span>
+                    <h2>Wind Energy Site Check</h2>
+                    <p>Wind energy can help in windy places, but Yangon users should compare wind strength, safety, and cost first.</p>
+                    <ul class="action-list">
+                      <li>Use it as a comparison study.</li>
+                      <li>Check space and safety rules.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-water" aria-hidden="true"></i></div>
+                    <span class="action-label renewable-label">Renewables</span>
+                    <h2>Micro-Hydro Learning</h2>
+                    <p>Study how flowing water can create electricity in suitable places, then compare it with Yangon's urban limits.</p>
+                    <ul class="action-list">
+                      <li>Use it for research projects.</li>
+                      <li>Compare site and safety needs.</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane action-pane" id="home-actions" role="tabpanel" aria-labelledby="home-actions-tab" tabindex="0">
+              <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-lightbulb-fill" aria-hidden="true"></i></div>
+                    <h2>Daylight Before Lighting</h2>
+                    <p>Open curtains, move study desks near windows, and turn on only the lights needed for the task.</p>
+                    <ul class="action-list">
+                      <li>Check rooms before sunset.</li>
+                      <li>Use task lamps instead of whole-room lighting.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-fan" aria-hidden="true"></i></div>
+                    <h2>Fan-First Cooling</h2>
+                    <p>Use shade, airflow, and fans before stronger cooling. Keep doors closed when cooling one room.</p>
+                    <ul class="action-list">
+                      <li>Clean fan blades monthly.</li>
+                      <li>Cool only occupied rooms.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-plug-fill" aria-hidden="true"></i></div>
+                    <h2>Standby Power Basket</h2>
+                    <p>Group chargers, speakers, and small devices on one power strip so they are easy to switch off.</p>
+                    <ul class="action-list">
+                      <li>Unplug after charging.</li>
+                      <li>Turn off TV boxes at night.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-snow" aria-hidden="true"></i></div>
+                    <h2>Fridge Door Discipline</h2>
+                    <p>Decide what you need before opening the fridge and keep warm food outside until it cools.</p>
+                    <ul class="action-list">
+                      <li>Do quick door checks.</li>
+                      <li>Leave space behind the fridge.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-droplet-half" aria-hidden="true"></i></div>
+                    <h2>Water Pump Schedule</h2>
+                    <p>Set a household pump time and turn it off immediately after tanks are filled.</p>
+                    <ul class="action-list">
+                      <li>Fix leaking taps early.</li>
+                      <li>Avoid repeated short pump runs.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-basket2-fill" aria-hidden="true"></i></div>
+                    <h2>Batch Heat Tasks</h2>
+                    <p>Iron clothes in groups and boil only the water needed for tea, noodles, or coffee.</p>
+                    <ul class="action-list">
+                      <li>Do one ironing session.</li>
+                      <li>Use lids while heating.</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane action-pane" id="school-actions" role="tabpanel" aria-labelledby="school-actions-tab" tabindex="0">
+              <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-clipboard-check-fill" aria-hidden="true"></i></div>
+                    <h2>End-of-Class Checklist</h2>
+                    <p>Make one student team check fans, lights, projectors, speakers, and extension cords after each class.</p>
+                    <ul class="action-list">
+                      <li>Rotate the team weekly.</li>
+                      <li>Post the checklist near the door.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-sun-fill" aria-hidden="true"></i></div>
+                    <h2>Daylight Seating Map</h2>
+                    <p>Arrange seats so students can use natural light without blocking walkways or causing glare.</p>
+                    <ul class="action-list">
+                      <li>Keep windows clear.</li>
+                      <li>Use fewer lights in bright periods.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-pc-display" aria-hidden="true"></i></div>
+                    <h2>Computer Room Shutdown</h2>
+                    <p>Turn off monitors, CPUs, speakers, and stabilizers when the lab is not in use.</p>
+                    <ul class="action-list">
+                      <li>Use a shutdown captain.</li>
+                      <li>Check before lunch and closing time.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-projector-fill" aria-hidden="true"></i></div>
+                    <h2>Projector Time Plan</h2>
+                    <p>Switch projectors on only when the lesson needs them and turn them off during discussion time.</p>
+                    <ul class="action-list">
+                      <li>Prepare slides before class.</li>
+                      <li>Use board work when possible.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-bar-chart-fill" aria-hidden="true"></i></div>
+                    <h2>Weekly Energy Audit</h2>
+                    <p>Students record where energy is wasted and suggest one improvement for the next week.</p>
+                    <ul class="action-list">
+                      <li>Track repeated problems.</li>
+                      <li>Share results in assembly.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-megaphone-fill" aria-hidden="true"></i></div>
+                    <h2>Energy Reminder Posters</h2>
+                    <p>Place short reminders near switches, classroom doors, and computer tables.</p>
+                    <ul class="action-list">
+                      <li>Use student-made posters.</li>
+                      <li>Change messages monthly.</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane action-pane" id="daily-actions" role="tabpanel" aria-labelledby="daily-actions-tab" tabindex="0">
+              <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-cup-hot-fill" aria-hidden="true"></i></div>
+                    <h2>Cook Once, Reheat Less</h2>
+                    <p>Plan meals so rice, curry, and hot water are prepared in fewer heating sessions.</p>
+                    <ul class="action-list">
+                      <li>Use lids while cooking.</li>
+                      <li>Turn warmers off after meals.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-battery-charging" aria-hidden="true"></i></div>
+                    <h2>Charge With A Plan</h2>
+                    <p>Charge phones and power banks together, then unplug chargers instead of leaving them in sockets.</p>
+                    <ul class="action-list">
+                      <li>Use one charging station.</li>
+                      <li>Remove full devices quickly.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-moisture" aria-hidden="true"></i></div>
+                    <h2>Sun-Dry When Possible</h2>
+                    <p>Use sunlight and airflow for clothes instead of extra electric drying or repeated fan use.</p>
+                    <ul class="action-list">
+                      <li>Wash full loads.</li>
+                      <li>Spin-dry before hanging.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-phone-fill" aria-hidden="true"></i></div>
+                    <h2>Screen Brightness Habit</h2>
+                    <p>Lower phone and laptop brightness indoors and use sleep mode during breaks.</p>
+                    <ul class="action-list">
+                      <li>Set auto-sleep timers.</li>
+                      <li>Close unused apps.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-tools" aria-hidden="true"></i></div>
+                    <h2>Repair Before Replacing</h2>
+                    <p>Fix loose plugs, broken switches, and damaged wires early so appliances do not waste power or become unsafe.</p>
+                    <ul class="action-list">
+                      <li>Ask an adult or technician.</li>
+                      <li>Do not use damaged cords.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-cart-check-fill" aria-hidden="true"></i></div>
+                    <h2>Buy With Efficiency In Mind</h2>
+                    <p>When buying appliances, compare size, energy label, repair support, and real household need.</p>
+                    <ul class="action-list">
+                      <li>Avoid oversized appliances.</li>
+                      <li>Choose durable products.</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane action-pane" id="transport-actions" role="tabpanel" aria-labelledby="transport-actions-tab" tabindex="0">
+              <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-map-fill" aria-hidden="true"></i></div>
+                    <h2>Plan Trips Before Leaving</h2>
+                    <p>Group nearby errands, avoid unnecessary repeat trips, and choose routes that reduce waiting and idling.</p>
+                    <ul class="action-list">
+                      <li>List stops before leaving.</li>
+                      <li>Avoid repeat trips on the same route.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-people-fill" aria-hidden="true"></i></div>
+                    <h2>Shared Ride Routine</h2>
+                    <p>Share rides for school or work when it is safe, planned, and practical for everyone.</p>
+                    <ul class="action-list">
+                      <li>Set fixed pickup times.</li>
+                      <li>Avoid half-empty repeat trips.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-person-walking" aria-hidden="true"></i></div>
+                    <h2>Walk Short Distances</h2>
+                    <p>For nearby shops, tuition, or friends' houses, walk when the route, daylight, and weather are safe.</p>
+                    <ul class="action-list">
+                      <li>Choose shaded routes.</li>
+                      <li>Travel with friends when needed.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-stopwatch-fill" aria-hidden="true"></i></div>
+                    <h2>Reduce Engine Idling</h2>
+                    <p>When waiting safely for a longer time, turn off the engine instead of burning fuel while parked.</p>
+                    <ul class="action-list">
+                      <li>Plan waiting points.</li>
+                      <li>Avoid blocking traffic.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-bicycle" aria-hidden="true"></i></div>
+                    <h2>Cycle Where It Fits</h2>
+                    <p>Use bicycles for short, safe routes and keep tires, brakes, and lights in good condition.</p>
+                    <ul class="action-list">
+                      <li>Pick low-traffic streets.</li>
+                      <li>Carry rain protection.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-signpost-split-fill" aria-hidden="true"></i></div>
+                    <h2>Route Check Habit</h2>
+                    <p>Check traffic and weather before leaving so trips use less time, fuel, and frustration.</p>
+                    <ul class="action-list">
+                      <li>Leave before rush where possible.</li>
+                      <li>Combine pickup and shopping stops.</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane action-pane" id="smart-tech-actions" role="tabpanel" aria-labelledby="smart-tech-actions-tab" tabindex="0">
+              <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-plug-fill" aria-hidden="true"></i></div>
+                    <h2>Smart Plug Control</h2>
+                    <p>Use smart plugs or switched power strips to schedule chargers, routers, and TV devices off when not needed.</p>
+                    <ul class="action-list">
+                      <li>Start with one high-use corner.</li>
+                      <li>Check schedules every week.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-clock-fill" aria-hidden="true"></i></div>
+                    <h2>Timer Switch Routine</h2>
+                    <p>Use timer switches for lights, fans, signboards, and classroom devices that are often forgotten.</p>
+                    <ul class="action-list">
+                      <li>Set shutdown times clearly.</li>
+                      <li>Override only when needed.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-speedometer2" aria-hidden="true"></i></div>
+                    <h2>Energy Meter Check</h2>
+                    <p>Use a plug-in meter or regular meter photo log to see which habits change electricity use.</p>
+                    <ul class="action-list">
+                      <li>Measure one appliance at a time.</li>
+                      <li>Compare weekly readings.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-broadcast-pin" aria-hidden="true"></i></div>
+                    <h2>Motion Sensor Lighting</h2>
+                    <p>Use motion sensors in corridors, stairways, toilets, or storage rooms where lights are often left on.</p>
+                    <ul class="action-list">
+                      <li>Use sensors in low-traffic areas.</li>
+                      <li>Keep manual switches available.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-stars" aria-hidden="true"></i></div>
+                    <h2>Inverter Appliance Upgrade</h2>
+                    <p>When replacing fans, refrigerators, or air conditioners, compare inverter models and real room size.</p>
+                    <ul class="action-list">
+                      <li>Replace only when needed.</li>
+                      <li>Avoid oversized appliances.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon mint-icon"><i class="bi bi-thermometer-half" aria-hidden="true"></i></div>
+                    <h2>Smart Temperature Rule</h2>
+                    <p>Set clear temperature rules for cooling rooms and use fans, curtains, and timers together.</p>
+                    <ul class="action-list">
+                      <li>Cool only occupied rooms.</li>
+                      <li>Use timers during study sessions.</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane action-pane" id="renewable-actions" role="tabpanel" aria-labelledby="renewable-actions-tab" tabindex="0">
+              <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-sun-fill" aria-hidden="true"></i></div>
+                    <h2>Solar Study Lamp</h2>
+                    <p>Use solar lamps for study tables, reading corners, and emergency lighting when sunlight is available.</p>
+                    <ul class="action-list">
+                      <li>Charge near sunlight safely.</li>
+                      <li>Keep one lamp for study time.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-battery-charging" aria-hidden="true"></i></div>
+                    <h2>Solar Charging Station</h2>
+                    <p>Create a small solar charging point for phones, study lights, or power banks where it is practical.</p>
+                    <ul class="action-list">
+                      <li>Charge during strong daylight.</li>
+                      <li>Protect batteries from heat.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-lightbulb-fill" aria-hidden="true"></i></div>
+                    <h2>Solar Path Lighting</h2>
+                    <p>Use solar lights for gates, footpaths, school walkways, or outdoor community spaces.</p>
+                    <ul class="action-list">
+                      <li>Place panels where shade is low.</li>
+                      <li>Clean panels regularly.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-house-check-fill" aria-hidden="true"></i></div>
+                    <h2>Rooftop Solar Readiness</h2>
+                    <p>For schools or businesses, check roof strength, sunlight, budget, and maintenance before rooftop solar.</p>
+                    <ul class="action-list">
+                      <li>Ask a qualified installer.</li>
+                      <li>Plan battery safety first.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-wind" aria-hidden="true"></i></div>
+                    <h2>Wind Energy Site Check</h2>
+                    <p>Wind energy can help in windy places, but Yangon users should compare wind strength, safety, and cost first.</p>
+                    <ul class="action-list">
+                      <li>Use it as a comparison study.</li>
+                      <li>Check space and safety rules.</li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="tip-card action-card h-100">
+                    <div class="category-icon peach-icon"><i class="bi bi-water" aria-hidden="true"></i></div>
+                    <h2>Micro-Hydro Learning</h2>
+                    <p>Study how flowing water can create electricity in suitable places, then compare it with Yangon's urban limits.</p>
+                    <ul class="action-list">
+                      <li>Use it for research projects.</li>
+                      <li>Compare site and safety needs.</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="matter-section" data-aos="fade-up">
+        <div class="page-container">
+          <div class="matter-panel">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7">
+                <h2>Why These Choices Matter</h2>
+                <p>
+                  These actions focus on Yangon energy consumption habits. They combine simple routines,
+                  smart technology, and renewable options so users can choose what fits their budget and place.
+                </p>
+
+                <div class="impact-stats">
+                  <div class="impact-box">
+                    <i class="bi bi-plug-fill" aria-hidden="true"></i>
+                    <strong>5-10%</strong>
+                    <span>Standby power can come from plugged-in devices that look turned off</span>
+                  </div>
+                  <div class="impact-box">
+                    <i class="bi bi-lightbulb-fill" aria-hidden="true"></i>
+                    <strong>80-90%</strong>
+                    <span>LED lights can use much less electricity than old incandescent bulbs</span>
+                  </div>
+                  <div class="impact-box">
+                    <i class="bi bi-repeat" aria-hidden="true"></i>
+                    <strong>Habit</strong>
+                    <span>Use repeated checklists so saving energy becomes normal</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <article class="solution-card">
+                  <h3>Choose one action this week</h3>
+                  <p>
+                    Pick one habit, test it for seven days, and share what worked. Wattwise focuses on repeatable
+                    choices because sustainable behavior grows through routines.
+                  </p>
+                  <a class="btn solution-btn" href="contact_us.html">Share Your Energy Idea</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-aos="fade-up">
+      <div class="page-container">
+        <div class="row g-4 footer-main">
+          <div class="col-md-12 col-lg-5 footer-brand">
+            <a class="footer-logo" href="index.html">Watt<span>wise</span></a>
+            <p>Helping Yangon understand energy data, compare global lessons, and build smarter habits.</p>
+            <div class="footer-socials">
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+              <a href="#" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+              <span><i class="bi bi-geo-alt" aria-hidden="true"></i> Yangon, Myanmar</span>
+            </div>
+          </div>
+
+          <nav class="col-md-12 col-lg-7 footer-links" aria-label="Footer navigation">
+            <div>
+              <h3>Platform</h3>
+              <a href="index.html">Home</a>
+              <a href="about_us.html">About Us</a>
+              <a href="crossroads.html">Smart Solution</a>
+              <a href="contact_us.html">Contact Us</a>
+            </div>
+            <div>
+              <h3>About</h3>
+              <a href="about_us.html#our-mission">Our Mission</a>
+              <a href="about_us.html#team">Team</a>
+              <a href="contact_us.html">Contact</a>
+            </div>
+            <div>
+              <h3>Legal</h3>
+              <a href="legal.html#privacy-policy">Privacy policy</a>
+              <a href="legal.html#terms-of-service">Terms of Service</a>
+              <a href="legal.html#data-privacy">Data Privacy</a>
+              <a href="https://docs.google.com/document/d/1IRjo8ikSaaN3whGjAY_0RO4TEdBPAEf4IMQcrswLgdg/edit?usp=sharing" target="_blank" rel="noopener">References</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Copyright &copy; 2026 Wattwise. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <input class="auth-radio" type="radio" name="authView" id="authSignupView" checked>
+    <input class="auth-radio" type="radio" name="authView" id="authLoginView">
+
+    <div class="modal fade auth-modal" id="authModal" tabindex="-1" aria-labelledby="authModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered auth-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-close auth-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="auth-flip-wrap">
+            <div class="auth-flip-card">
+              <div class="auth-face">
+                <div class="auth-panel">
+                  <div class="auth-heading text-center">
+                    <img class="auth-logo" src="images/wattwise logo.png" alt="Wattwise logo">
+                    <span class="badge rounded-pill auth-badge mb-3">Join Wattwise</span>
+                    <h2 id="authModalTitle">Create your account</h2>
+                    <p>Save your progress, compare daily habits, and get practical energy tips.</p>
+                  </div>
+                  <form class="auth-form">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input class="form-control form-control-lg" id="signupName" type="text" placeholder="Your name">
+                          <label for="signupName">Full name</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input class="form-control form-control-lg" id="signupEmail" type="email" placeholder="name@example.com">
+                          <label for="signupEmail">Email address</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input class="form-control form-control-lg" id="signupPassword" type="password" placeholder="Create password">
+                          <label for="signupPassword">Password</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input class="form-control form-control-lg" id="signupConfirmPassword" type="password" placeholder="Confirm password">
+                          <label for="signupConfirmPassword">Confirm Password</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-check mt-3">
+                      <input class="form-check-input" type="checkbox" id="signupUpdates">
+                      <label class="form-check-label" for="signupUpdates">Send me energy saving updates and local project news.</label>
+                    </div>
+                    <label class="btn primary-btn w-100 mt-4" for="authLoginView" role="button" tabindex="0">Create Account</label>
+                  </form>
+                  <p class="auth-switch text-center mt-3 mb-0">Already have an account? <label class="btn auth-link p-0" for="authLoginView" role="button">Log in</label></p>
+                </div>
+              </div>
+
+              <div class="auth-face auth-back">
+                <div class="auth-panel auth-login-panel">
+                  <div class="auth-heading text-center">
+                    <img class="auth-logo" src="images/wattwise logo.png" alt="Wattwise logo">
+                    <span class="badge rounded-pill auth-badge mb-3">Welcome back</span>
+                    <h2>Log in to Wattwise</h2>
+                    <p>Continue checking saved energy tips and awareness notes.</p>
+                  </div>
+                  <form class="auth-form">
+                    <div class="form-floating mb-3">
+                      <input class="form-control form-control-lg" id="loginEmail" type="email" placeholder="name@example.com">
+                      <label for="loginEmail">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input class="form-control form-control-lg" id="loginPassword" type="password" placeholder="Your password">
+                      <label for="loginPassword">Password</label>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="rememberLogin">
+                        <label class="form-check-label" for="rememberLogin">Remember me</label>
+                      </div>
+                      <a class="auth-forgot" href="#">Forgot password?</a>
+                    </div>
+                    <a class="btn primary-btn w-100 mt-4" href="index.html">Login</a>
+                  </form>
+                  <p class="auth-switch text-center mt-3 mb-0">New to Wattwise? <label class="btn auth-link p-0" for="authSignupView" role="button">Create an account</label></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
