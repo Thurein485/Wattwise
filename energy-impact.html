@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Energy Impact - Wattwise</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="energy-impact.css?v=20260531">
+  </head>
+  <body>
+
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg main-nav">
+        <a class="navbar-brand brand" href="index.html">
+          <img src="images/wattwise logo.png" alt="Wattwise logo">
+          <span>Watt<span>wise</span></span>
+        </a>
+
+        <button class="navbar-toggler nav-toggle-label" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse nav-content" id="mainNavbar">
+          <ul class="navbar-nav nav-links">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+            <li class="nav-item dropdown nav-dropdown">
+              <button class="nav-link dropdown-toggle nav-trigger" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                Smart Solutions
+              </button>
+              <ul class="dropdown-menu smart-menu">
+                <li>
+                  <a class="dropdown-item" href="crossroads.html">
+                    <span><i class="bi bi-signpost-split-fill"></i></span>
+                    Crossroads
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="act-smart.html">
+                    <span><i class="bi bi-gear-wide-connected"></i></span>
+                    Act Smart
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="energy-impact.html">
+                    <span><i class="bi bi-lightning-charge"></i></span>
+                    Energy Impact
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <label class="btn sign-up" for="authSignupView"
+                  data-bs-toggle="modal" data-bs-target="#authModal"
+                  role="button" tabindex="0">Sign Up</label>
+            <label class="btn login" for="authLoginView"
+                  data-bs-toggle="modal" data-bs-target="#authModal"
+                  role="button" tabindex="0">Login</label>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="ei-vision-section" data-aos="fade-up">
+        <div class="page-container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <span class="ei-vision-kicker">
+                <i class="bi bi-binoculars"></i> 2040 Outlook
+              </span>
+              <h1 class="ei-vision-title">A Future Yangon With Smarter Energy Choices</h1>
+              <p class="ei-vision-text">
+                The 2040 outlook is about future change, not a fixed prediction. If we keep improving awareness, daily habits, technology choices, and community planning, energy use can become more responsible across homes, schools, shops, and transport.
+              </p>
+              <p class="ei-vision-note">
+                Wattwise connects today&apos;s energy habits with tomorrow&apos;s possibilities: less avoidable waste, stronger local action, and a city that is more prepared for sustainable living.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="ei-vision-change-list">
+                <article class="ei-vision-change">
+                  <span>01</span>
+                  <div>
+                    <h2>Energy-aware daily life</h2>
+                    <p>People make electricity use part of everyday decision-making, from charging devices to cooling rooms and using appliances.</p>
+                  </div>
+                </article>
+                <article class="ei-vision-change">
+                  <span>02</span>
+                  <div>
+                    <h2>Smarter homes and schools</h2>
+                    <p>Classrooms, households, and small businesses follow better routines, reduce standby waste, and choose efficient equipment.</p>
+                  </div>
+                </article>
+                <article class="ei-vision-change">
+                  <span>03</span>
+                  <div>
+                    <h2>Cleaner technology choices</h2>
+                    <p>Renewable energy, smart devices, and low-impact transport become easier to understand, compare, and use in daily life.</p>
+                  </div>
+                </article>
+                <article class="ei-vision-change">
+                  <span>04</span>
+                  <div>
+                    <h2>Community-level improvement</h2>
+                    <p>Local groups share practical actions, compare progress, and support energy habits that fit Yangon&apos;s real challenges.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="ei-hero" data-aos="fade-up">
+        <div class="ei-hero-panel ei-hero-left">
+          <div class="ei-hero-bg" style="background-image:url(images/photo_6066814260098044128_y.jpg)"></div>
+          <div class="ei-hero-overlay ei-overlay-dark"></div>
+          <div class="ei-hero-content">
+            <span class="ei-hero-badge ei-badge-red">
+              <i class="bi bi-exclamation-circle-fill"></i> Current
+            </span>
+            <h2 class="ei-hero-path-title">High Waste Habits</h2>
+            <p class="ei-hero-path-desc">When lights, fans, chargers, cooking heat, and transport are used without planning, avoidable electricity and fuel waste grows across Yangon.</p>
+            <div class="ei-hero-stats">
+              <div class="ei-hero-stat-box">
+                <span class="ei-stat-label">Standby waste</span>
+                <strong class="ei-stat-value">5-10%</strong>
+              </div>
+              <div class="ei-hero-stat-box">
+                <span class="ei-stat-label">National use (2025 est.)</span>
+                <strong class="ei-stat-value ei-stat-bold">20,500-21,000 GWh</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ei-hero-swap">
+          <button class="ei-swap-btn" aria-label="Compare views">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+        </div>
+
+        <div class="ei-hero-panel ei-hero-right">
+          <div class="ei-hero-bg" style="background-image:url('images/the_central_-_2.jpg')"></div>
+          <div class="ei-hero-overlay ei-overlay-light"></div>
+          <div class="ei-hero-content">
+            <span class="ei-hero-badge ei-badge-green">
+              <i class="bi bi-stars"></i> Sustainable Vision
+            </span>
+            <h2 class="ei-hero-path-title">Smarter Yangon Path</h2>
+            <p class="ei-hero-path-desc">A smarter path combines efficient lighting, switch-off routines, appliance planning, and practical habits people can repeat.</p>
+            <div class="ei-hero-stats">
+              <div class="ei-hero-stat-box">
+                <span class="ei-stat-label">LED savings</span>
+                <strong class="ei-stat-value">80-90%</strong>
+              </div>
+              <div class="ei-hero-stat-box">
+                <span class="ei-stat-label">Per person use (2025 est.)</span>
+                <strong class="ei-stat-value ei-stat-bold">380-390 kWh</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ei-indicators-section" data-aos="fade-up">
+        <div class="page-container">
+          <h2 class="ei-section-title">Energy Impact Indicators</h2>
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <article class="ei-indicator-card">
+                <div class="ei-ind-icon ei-ind-icon-green">
+                  <i class="bi bi-cloud-fog2-fill"></i>
+                </div>
+                <span class="ei-ind-label">Daily energy habits</span>
+                <strong class="ei-ind-value">Small actions</strong>
+                <p class="ei-ind-desc">Small actions like leaving chargers plugged in, overusing lights, or running appliances unnecessarily can increase avoidable electricity waste over time.</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="ei-indicator-card">
+                <div class="ei-ind-icon ei-ind-icon-green">
+                  <i class="bi bi-cash-stack"></i>
+                </div>
+                <span class="ei-ind-label">Household &amp; school efficiency</span>
+                <strong class="ei-ind-value">Better routines</strong>
+                <p class="ei-ind-desc">Energy-saving routines in homes and classrooms, including switching off devices, using efficient lighting, and reducing standby power, can lower unnecessary consumption.</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="ei-indicator-card">
+                <div class="ei-ind-icon ei-ind-icon-peach">
+                  <i class="bi bi-tree-fill"></i>
+                </div>
+                <span class="ei-ind-label">Smarter consumption choices</span>
+                <strong class="ei-ind-value">Long-term impact</strong>
+                <p class="ei-ind-desc">Choosing LED lighting, efficient appliances, and better transport habits supports long-term energy efficiency in Yangon.</p>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section class="ei-forecast-section" data-aos="fade-up">
+        <div class="page-container">
+          <div class="row g-4 align-items-stretch">
+
+            <div class="col-lg-7">
+              <article class="ei-card ei-chart-card h-100">
+                <div class="ei-chart-header">
+                  <div>
+                    <h3 class="ei-chart-title">From Waste Habits To Smarter Consumption</h3>
+                    <p class="ei-chart-subtitle">A visual pathway from daily waste to practical energy habits</p>
+                  </div>
+                </div>
+
+
+                <div class="ei-bar-chart-wrap">
+                  <svg viewBox="0 0 480 200" class="ei-bar-svg" aria-label="Urban energy demand bar chart">
+                    <text class="ei-bar-value" x="42" y="92" text-anchor="middle">20%</text>
+                    <text class="ei-bar-value" x="102" y="62" text-anchor="middle">45%</text>
+                    <text class="ei-bar-value" x="162" y="42" text-anchor="middle">70%</text>
+                    <text class="ei-bar-goal-value" x="226" y="12" text-anchor="middle">Goal 95%</text>
+                    <text class="ei-bar-value" x="286" y="42" text-anchor="middle">70%</text>
+                    <text class="ei-bar-value" x="346" y="67" text-anchor="middle">45%</text>
+                    <text class="ei-bar-value" x="406" y="87" text-anchor="middle">20%</text>
+                    <rect x="20"  y="100" width="44" height="90" rx="4" fill="#d0d8ca"/>
+                    <rect x="80"  y="70"  width="44" height="120" rx="4" fill="#d0d8ca"/>
+                    <rect x="140" y="50"  width="44" height="140" rx="4" fill="#d0d8ca"/>
+                    
+                    <rect x="204" y="20"  width="44" height="170" rx="4" fill="#243816"/>
+                    <rect x="264" y="50"  width="44" height="140" rx="4" fill="#2e4a1e"/>
+                    <rect x="324" y="75"  width="44" height="115" rx="4" fill="#2e4a1e"/>
+                    <rect x="384" y="95"  width="44" height="95"  rx="4" fill="#2e4a1e"/>
+                    <line x1="10" y1="192" x2="470" y2="192" stroke="#dde3d8" stroke-width="1"/>
+                  </svg>
+                </div>
+
+                <div class="ei-chart-legend">
+                  <span class="ei-legend-dot" style="background:#d0d8ca"></span>
+                  <span class="ei-legend-text">Wasteful habits</span>
+                  <span class="ei-legend-dot ms-3" style="background:#243816"></span>
+                  <span class="ei-legend-text">Smarter habits</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-5">
+              <article class="ei-card ei-simulate-card h-100">
+                <div class="ei-simulate-icon">
+                  <i class="bi bi-diagram-3-fill"></i>
+                </div>
+                <h3 class="ei-simulate-title">Read The Data Carefully</h3>
+                <p class="ei-simulate-desc">Wattwise does not claim exact personal savings without a meter. It shows indicators and practical habits people can test in real life.</p>
+                <a class="btn ei-simulate-btn" href="act-smart.html">Choose an Action</a>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="ei-pills-section" data-aos="fade-up">
+        <div class="page-container">
+          <div class="row g-3">
+
+            <div class="col-md-4">
+              <article class="ei-pill-card">
+                <div class="ei-pill-icon ei-pill-icon-amber">
+                  <i class="bi bi-building"></i>
+                </div>
+                <div>
+                  <p class="ei-pill-label">Household impact</p>
+                  <p class="ei-pill-sub">Unnecessary electricity use increases energy costs and adds pressure to already limited power supply systems.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="ei-pill-card">
+                <div class="ei-pill-icon ei-pill-icon-green">
+                  <i class="bi bi-wind"></i>
+                </div>
+                <div>
+                  <p class="ei-pill-label">Education impact</p>
+                  <p class="ei-pill-sub">Schools using inefficient lighting and leaving devices switched on may waste energy that could be reduced through better routines.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="ei-pill-card">
+                <div class="ei-pill-icon ei-pill-icon-red">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+                <div>
+                  <p class="ei-pill-label">Environmental impact</p>
+                  <p class="ei-pill-sub">Avoidable electricity waste contributes to higher fuel demand and greater environmental pressure over time.</p>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section class="ei-carbon-section" data-aos="fade-up">
+        <div class="page-container">
+          <div class="ei-carbon-row"><article class="ei-carbon-card ei-carbon-bad">
+              <div class="ei-carbon-img-wrap">
+                <img src="images/photo_6066814260098044130_y.jpg" alt="Myanmar city – high carbon" class="ei-carbon-img ei-carbon-img-bw">
+              </div>
+              <div class="ei-carbon-body">
+                <span class="ei-carbon-meta">Myanmar today</span>
+                <div class="ei-carbon-stat-row">
+                  <div>
+                    <strong class="ei-carbon-value">High</strong>
+                    <span class="ei-carbon-unit">avoidable waste</span>
+                  </div>
+                  <span class="ei-status-badge ei-badge-critical">CURRENT</span>
+                </div>
+                <div class="ei-carbon-bar-track">
+                  <div class="ei-carbon-bar-fill ei-carbon-bar-red" style="width:65%"></div>
+                </div>
+              </div>
+            </article>
+
+            <div class="ei-carbon-gap-badge">
+              <strong>Goal</strong>
+              <span>HABIT<br>GOAL</span>
+            </div>
+
+            <article class="ei-carbon-card ei-carbon-good">
+              <div class="ei-carbon-img-wrap">
+                <img src="images/photo_6066814260098044130_y.jpg" alt="Myanmar city – optimized" class="ei-carbon-img">
+              </div>
+              <div class="ei-carbon-body">
+                <span class="ei-carbon-meta">Smarter Yangon</span>
+                <div class="ei-carbon-stat-row">
+                  <div>
+                    <strong class="ei-carbon-value">Lower</strong>
+                    <span class="ei-carbon-unit">avoidable waste</span>
+                  </div>
+                  <span class="ei-status-badge ei-badge-optimized">PRACTICAL</span>
+                </div>
+                <div class="ei-carbon-bar-track">
+                  <div class="ei-carbon-bar-fill ei-carbon-bar-green" style="width:35%"></div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section class="ei-flow-section" data-aos="fade-up">
+        <div class="page-container">
+          <div class="ei-flow-row"><article class="ei-flow-card">
+              <h3 class="ei-flow-title">Myanmar Impact</h3>
+              <div class="ei-flow-table">
+                <div class="ei-flow-row-item">
+                  <span class="ei-flow-row-label">Electricity use per person (2025 est.)</span>
+                  <strong class="ei-flow-row-val ei-flow-val-red">380-390 kWh</strong>
+                </div>
+                <div class="ei-flow-row-item">
+                  <span class="ei-flow-row-label">Standby waste estimate</span>
+                  <strong class="ei-flow-row-val ei-flow-val-red">5-10%</strong>
+                </div>
+              </div>
+            </article>
+
+            <div class="ei-flow-badge">
+              <strong>VS</strong>
+              <span>GLOBAL<br>LESSON</span>
+            </div>
+
+            <article class="ei-flow-card">
+              <h3 class="ei-flow-title">Global Lesson</h3>
+              <div class="ei-flow-table">
+                <div class="ei-flow-row-item">
+                  <span class="ei-flow-row-label">Lighting improvement</span>
+                  <strong class="ei-flow-row-val">80-90%</strong>
+                </div>
+                <div class="ei-flow-row-item">
+                  <span class="ei-flow-row-label">Efficiency policy</span>
+                  <strong class="ei-flow-row-val ei-flow-val-green">Standards</strong>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer" data-aos="fade-up">
+      <div class="page-container">
+        <div class="row g-4 footer-main">
+          <div class="col-md-12 col-lg-5 footer-brand">
+            <a class="footer-logo" href="index.html">Watt<span>wise</span></a>
+            <p>Helping Yangon understand energy data, compare global lessons, and build smarter habits.</p>
+            <div class="footer-socials">
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <span><i class="bi bi-geo-alt"></i> Yangon, Myanmar</span>
+            </div>
+          </div>
+          <nav class="col-md-12 col-lg-7 footer-links" aria-label="Footer navigation">
+            <div>
+              <h3>Platform</h3>
+              <a href="index.html">Home</a>
+              <a href="about_us.html">About Us</a>
+              <a href="crossroads.html">Smart Solution</a>
+              <a href="contact_us.html">Contact Us</a>
+            </div>
+            <div>
+              <h3>About</h3>
+              <a href="about_us.html#our-mission">Our Mission</a>
+              <a href="about_us.html#team">Team</a>
+              <a href="contact_us.html">Contact</a>
+            </div>
+            <div>
+              <h3>Legal</h3>
+              <a href="legal.html#privacy-policy">Privacy policy</a>
+              <a href="legal.html#terms-of-service">Terms of Service</a>
+              <a href="legal.html#data-privacy">Data Privacy</a>
+              <a href="https://docs.google.com/document/d/1IRjo8ikSaaN3whGjAY_0RO4TEdBPAEf4IMQcrswLgdg/edit?usp=sharing" target="_blank" rel="noopener">References</a>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright &copy; 2026 Wattwise. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer><input class="auth-radio" type="radio" name="authView" id="authSignupView" checked>
+    <input class="auth-radio" type="radio" name="authView" id="authLoginView">
+    <div class="modal fade auth-modal" id="authModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered auth-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-close auth-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="auth-flip-wrap">
+            <div class="auth-flip-card">
+              <div class="auth-face">
+                <div class="auth-panel">
+                  <div class="auth-heading text-center">
+                    <img class="auth-logo" src="images/wattwise logo.png" alt="Wattwise logo">
+                    <span class="badge rounded-pill auth-badge mb-3">Join Wattwise</span>
+                    <h2 id="authModalTitle">Create your account</h2>
+                    <p>Save your progress, compare daily habits, and get practical energy tips.</p>
+                  </div>
+                  <form class="auth-form">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input class="form-control form-control-lg" id="signupName" type="text" placeholder="Your name">
+                          <label for="signupName">Full name</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input class="form-control form-control-lg" id="signupEmail" type="email" placeholder="name@example.com">
+                          <label for="signupEmail">Email address</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input class="form-control form-control-lg" id="signupPassword" type="password" placeholder="Create password">
+                          <label for="signupPassword">Password</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input class="form-control form-control-lg" id="signupConfirmPassword" type="password" placeholder="Confirm password">
+                          <label for="signupConfirmPassword">Confirm Password</label>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="btn primary-btn w-100 mt-4" for="authLoginView" role="button" tabindex="0">Create Account</label>
+                  </form>
+                  <p class="auth-switch text-center mt-3 mb-0">Already have an account? <label class="btn auth-link p-0" for="authLoginView" role="button">Log in</label></p>
+                </div>
+              </div>
+              <div class="auth-face auth-back">
+                <div class="auth-panel auth-login-panel">
+                  <div class="auth-heading text-center">
+                    <img class="auth-logo" src="images/wattwise logo.png" alt="Wattwise logo">
+                    <span class="badge rounded-pill auth-badge mb-3">Welcome back</span>
+                    <h2>Log in to Wattwise</h2>
+                    <p>Continue checking saved energy tips and awareness notes.</p>
+                  </div>
+                  <form class="auth-form">
+                    <div class="form-floating mb-3">
+                      <input class="form-control form-control-lg" id="loginEmail" type="email" placeholder="name@example.com">
+                      <label for="loginEmail">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input class="form-control form-control-lg" id="loginPassword" type="password" placeholder="Your password">
+                      <label for="loginPassword">Password</label>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <a class="auth-forgot" href="#" data-bs-toggle="modal" data-bs-target="#resetPasswordModal">Forgot password?</a>
+                    </div>
+                    <a class="btn primary-btn w-100 mt-4" href="index.html">Login</a>
+                  </form>
+                  <p class="auth-switch text-center mt-3 mb-0">New to Wattwise? <label class="btn auth-link p-0" for="authSignupView" role="button">Create an account</label></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade reset-modal" id="resetPasswordModal" tabindex="-1" aria-labelledby="resetPasswordTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 rounded-4 shadow p-4 p-md-5 position-relative">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="auth-heading text-center">
+            <img class="auth-logo" src="images/wattwise logo.png" alt="Wattwise logo">
+            <span class="badge rounded-pill auth-badge mb-3">Password Help</span>
+            <h2 id="resetPasswordTitle">Reset Password</h2>
+            <p>Create a new password for your Wattwise account.</p>
+          </div>
+          <form class="auth-form">
+            <div class="form-floating">
+              <input class="form-control form-control-lg" id="resetNewPassword" type="password" placeholder="New password">
+              <label for="resetNewPassword">New Password</label>
+            </div>
+            <div class="form-floating mt-3">
+              <input class="form-control form-control-lg" id="resetConfirmPassword" type="password" placeholder="Confirm password">
+              <label for="resetConfirmPassword">Confirm Password</label>
+            </div>
+            <button class="btn primary-btn w-100 mt-4" type="button" data-bs-dismiss="modal">Reset Password</button>
+          </form>
+          <p class="auth-switch text-center mt-3 mb-0">
+            Remember your password?
+            <button class="btn auth-link p-0" type="button" data-bs-target="#authModal" data-bs-toggle="modal">Back to login</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
